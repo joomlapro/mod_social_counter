@@ -42,15 +42,19 @@ JHtml::stylesheet('mod_social_counter/template.css', false, true, false);
 </script>
 <div class="social_counter<?php echo $moduleclass_sfx; ?>">
 	<div class="row-fluid">
-		<div class="span6">
-			<i class="icon-twitter"></i>
-			<a href="#" class="hasTooltip" title="<?php echo JText::_('MOD_SOCIAL_COUNTER_FOLLOW_US_ON_TWITTER'); ?>">Twitter</a>
-			<span id="twitter"></span>
-		</div>
-		<div class="span6">
-			<i class="icon-facebook"></i>
-			<a href="#" class="hasTooltip" title="<?php echo JText::_('MOD_SOCIAL_COUNTER_LIKE_US_ON_FACEBOOK'); ?>">Facebook</a>
-			<span id="facebook"></span>
-		</div>
+		<?php if ($twitter): ?>
+			<div class="span6">
+				<i class="icon-twitter"></i>
+				<a href="#" class="hasTooltip" title="<?php echo JText::_('MOD_SOCIAL_COUNTER_FOLLOW_US_ON_TWITTER'); ?>">Twitter</a>
+				<span id="twitter"></span>
+			</div>
+		<?php endif; ?>
+		<?php if ($facebook): ?>
+			<div class="span6">
+				<i class="icon-facebook"></i>
+				<a href="#" class="hasTooltip" title="<?php echo JText::_('MOD_SOCIAL_COUNTER_LIKE_US_ON_FACEBOOK'); ?>">Facebook</a>
+				<span id="facebook"></span>
+			</div>
+		<?php endif; ?>
 	</div>
 </div>
