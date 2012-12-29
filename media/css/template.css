@@ -1,0 +1,22 @@
+.social_counter {
+	font-family: 'ProximaNova-Light', sans-serif;
+	text-align: center;
+}
+.social_counter span {
+	font-size: 24px;
+	line-height: 24px;
+	color: #999;
+}
+.social_counter a {
+	margin-bottom: 10px;
+	text-decoration: none;
+	color: #999;
+	font-size: 17px;
+	display: block;
+}
+.social_counter i {
+	float: left;
+	font-size: 36px;
+	line-height: 42px;
+	color: #ccc;
+}
