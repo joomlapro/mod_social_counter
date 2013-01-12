@@ -12,7 +12,6 @@
 	<files>
 		<filename module="mod_social_counter">mod_social_counter.php</filename>
 		<folder>tmpl</folder>
-		<filename>helper.php</filename>
 		<filename>index.html</filename>
 		<filename>mod_social_counter.xml</filename>
 	</files>
